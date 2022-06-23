@@ -1,36 +1,195 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 html,
-body{
-
-    font-family: 'DM Sans', sans-serif;
-    width: 100%;
-    height: 100%;
-    background: #FFFFFF;
+body {
+  font-family: "DM Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  margin: 0;
 }
 
-h1{
-    font-family: DM Sans;
-    font-size: 30px;
-    font-weight: 700;
-    color: #424950;
-    text-align: center;
+/* nav */
+nav {
+  margin: 0;
+  padding: 20px 10px 10px;
+  border-bottom: 1px solid #FFECE2;
 }
-h2{
-    font-family: DM Sans;
-    font-size: 20px;
-    font-weight: 700;
-    color: #424950;
-    text-align: center;
+.nav-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-
-.traveller-detail{
-    position: relative;
-
+/* default paddings */
+header,
+main,
+aside {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 900px;
 }
 
-button{
-    background: #ff5e0d;
-    color: #FFFFFF;
+section {
+  margin-bottom: 40px;
+}
+
+/* header */
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: DM Sans;
+  font-size: 30px;
+  font-weight: 700;
+  color: #424950;
+  display: inline;
+}
+.check-img {
+  margin: 0 10px;
+}
+.print-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  margin-left: 40px;
+  background: #ff5e0d;
+  color: #ffffff;
+}
+
+/* all h2 */
+h2 {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 700;
+  color: #424950;
+  text-align: center;
+}
+
+/* traveler info */
+.traveler-detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.traveler-detail > p {
+  width: 33%;
+}
+
+/* booking summary */
+.booking-details > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.booking-details p {
+  width: 33%;
+}
+
+/* booking summary */
+.fare-details > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid #ffece2;
+  padding: 0 40px;
+}
+.total-fare {
+  background-color: #ff5e0d;
+  color: white;
+}
+
+/* aside */
+aside {
+  background-color: #ffece2;
+  max-width: 100%;
+}
+
+/* book hotels */
+.book-hotels {
+  border: 1px solid #ff5e0d;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.book-hotels__wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 20px;
+  height: 200px;
+}
+.book-hotels__image {
+  width: 40%;
+  margin-right: 20px;
+}
+.book-hotels img {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #ff5e0d;
+  border-radius: 5px;
+}
+.book-hotels__description {
+  width: 60%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.book-hotels__description h2 {
+  text-align: left;
+  margin: 0;
+}
+.book-hotels__description p {
+  text-align: left;
+  margin: 10px 0;
+}
+.book-hotels__description button {
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background: #ff5e0d;
+  color: #ffffff;
+}
+
+/* footer */
+footer {
+  padding: 20px;
+  height: 100px;
+}
+.footer__wrapper {
+  max-width: 860px;
+  margin: auto;
+}
+footer p {
+  text-align: right;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social-medias {
+  margin-left: 10px;
+}
+.social-medias img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.social-medias a:nth-child(2) img {
+  margin: 0 10px;
 }
